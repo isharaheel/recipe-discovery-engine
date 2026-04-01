@@ -1,0 +1,283 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+body, html {
+  overflow-x: hidden;
+}
+
+#secondarynavbar{
+   background-color: rgb(73, 73, 73);
+   height: 13vh;
+   z-index: 1;
+}
+.navbar-nav .nav-link:hover {
+  color: #ff4500 !important; 
+  transition: color 0.3s ease;
+}
+#navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(223, 88, 5);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+#searchInput{
+  width: 26%;
+  height: 40px;
+  margin: auto;
+  padding-left: 20px;
+  border-radius: 7px;
+  border: transparent;
+}
+#foodContainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.foodDiv{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 20%;
+  height: auto;
+  padding-bottom: 30px;
+  margin-left: 10%;
+  margin-top: 50px;
+  z-index: 1;
+  position: relative;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.foodDiv:hover {
+  transform: scale(1.05);
+}
+.foodImgDiv{
+width: 100%;
+height: 28vh;
+text-align: center;
+}
+.foodImg{
+  width: 92%;
+  height: 25vh;
+  border-radius: 2px;
+  margin-top: 15px; 
+}
+.foodInfo{
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+.foodTitle{
+  font-family: 'KoHo', sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+}
+.foodSubtitle{
+  font-family: 'KoHo', sans-serif;
+  font-size: 20px;
+}
+.foodDescription{
+  font-family: 'KoHo', sans-serif;
+  font-size: 15px;
+  padding-bottom: 7px;
+}
+.clickBtn {
+  font-size: 16px;
+  width: 36%;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  font-family: 'KoHo', sans-serif;
+  font-weight: bold;
+  background-color: lightgray;
+  margin-left: 60%;
+}
+.recipeOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 10px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+  overflow-y: auto;
+}
+.overlayContent {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  height: 85vh;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  overflow-y: auto;
+  font-family: 'KoHo', sans-serif;
+}
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.leftSection img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+.rightSection {
+  flex: 1;
+}
+.rightSection h2,
+.rightSection h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.rightSection p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.ingredientsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1170px) and (min-width: 1000px){
+  .foodDiv{
+    width: 30%;
+    height: auto;
+    margin-left: 2.5%;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 780px){
+    .foodDiv{
+    width: 45%;
+    height: auto;
+    margin-left: 3%;
+  }
+  .clickBtn{
+    width: 40%;
+  }
+  #searchInput{
+    width: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 779px) and (min-width: 704px){
+   .foodDiv{
+    width: 45%;
+    height: auto;
+    margin-left: 3%;
+  }
+  .clickBtn{
+    width: 40%;
+}
+  #searchInput{
+    width: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 703px) and (min-width : 521px){
+  .foodDiv{
+    width: 45%;
+    height: auto;
+    margin-left: 3%;
+  }
+  #searchInput{
+    width: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 520px) and (min-width: 400px){
+  .foodDiv{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  #searchInput{
+    width: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 300px){
+  .foodDiv{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+  #searchInput{
+    width: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-height: 740px) and (min-height: 667px){
+  .foodDiv{
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-height: 720px){
+  .foodDiv{
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 870px) and (min-width: 440px){
+  .overlayContent{
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .leftSection img{
+   max-width: 95%;
+   height: auto;
+  }
+}
+
+
+@media screen and (max-width: 439px) and (min-width: 320px){
+  .overlayContent {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .rightSection,
+  .leftSection {
+    width: 100%;
+  }
+
+  .leftSection img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+}
