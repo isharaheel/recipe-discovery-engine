@@ -178,7 +178,7 @@ text-align: center;
     width: 40%;
   }
   #searchInput{
-    width: 50%;
+    width: 90%;
     height: 50px;
   }
 }
@@ -193,7 +193,7 @@ text-align: center;
     width: 40%;
 }
   #searchInput{
-    width: 50%;
+    width: 90%;
     height: 50px;
   }
 }
@@ -205,7 +205,7 @@ text-align: center;
     margin-left: 3%;
   }
   #searchInput{
-    width: 50%;
+    width: 90%;
     height: 50px;
   }
 }
@@ -217,7 +217,7 @@ text-align: center;
     margin-left: 10%;
   }
   #searchInput{
-    width: 50%;
+    width: 90%;
     height: 50px;
   }
 }
@@ -229,7 +229,7 @@ text-align: center;
     margin-left: 10%;
 }
   #searchInput{
-    width: 50%;
+    width: 90%;
     height: 50px;
   }
 }
